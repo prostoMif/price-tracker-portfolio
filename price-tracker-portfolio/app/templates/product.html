@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PricePulse - Товар</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body data-page="product" data-product-id="{{ product_id }}">
+  <div class="bg-glow glow-2"></div>
+  <div class="container">
+    <nav class="nav">
+      <a href="/" class="logo">PricePulse</a>
+      <div class="nav-links">
+        <a href="/">Главная</a>
+        <a href="/catalog">Каталог</a>
+        <a href="/analytics">Аналитика</a>
+        <a href="/deals">Сделки дня</a>
+        <a href="/compare">Сравнение</a>
+      </div>
+    </nav>
+
+    <section class="panel">
+      <h1 id="productTitle">Товар</h1>
+      <button id="favoriteProductBtn">В избранное</button>
+      <div class="product-hero">
+        <img id="productImage" src="" alt="Фото товара" />
+      </div>
+      <div class="chart-section">
+        <h2>Динамика цены</h2>
+        <canvas id="priceChart"></canvas>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Цены по магазинам</h2>
+      <div id="offersTable"></div>
+    </section>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PricePulse - Главная</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body data-page="home">
+  <div class="bg-glow glow-1"></div>
+  <div class="bg-glow glow-2"></div>
+  <div class="container">
+    <nav class="nav">
+      <a href="/" class="logo">PricePulse</a>
+      <div class="nav-links">
+        <a href="/" class="active">Главная</a>
+        <a href="/catalog">Каталог</a>
+        <a href="/analytics">Аналитика</a>
+        <a href="/deals">Сделки дня</a>
+        <a href="/compare">Сравнение</a>
+      </div>
+      <button id="refreshCollectorBtn">Обновить цены</button>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-top">
+        <span class="chip">400+ товаров</span>
+        <span class="chip">8 сегментов</span>
+        <span class="chip">5 магазинов</span>
+      </div>
+      <h1>Платформа мониторинга цен</h1>
+      <p>Сравнивай стоимость товаров по магазинам, отслеживай тренды и находи лучшие предложения.</p>
+    </header>
+
+    <section class="stats" id="stats"></section>
+
+    <section class="split">
+      <article class="panel">
+        <h2>Топ роста за 7 дней</h2>
+        <div id="topGrowth"></div>
+      </article>
+      <article class="panel">
+        <h2>Топ скидок за 7 дней</h2>
+        <div id="topDiscounts"></div>
+      </article>
+    </section>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
