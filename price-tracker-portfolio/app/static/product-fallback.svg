@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="420" viewBox="0 0 640 420">
+  <rect width="640" height="420" fill="#111b36"/>
+  <text x="50%" y="50%" fill="#dcebff" text-anchor="middle" dominant-baseline="middle" font-size="30" font-family="Inter, Arial">
+    Product Image
+  </text>
+</svg>

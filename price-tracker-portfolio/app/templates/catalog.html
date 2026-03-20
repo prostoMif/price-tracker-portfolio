@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PricePulse - Каталог</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+<body data-page="catalog">
+  <div class="bg-glow glow-1"></div>
+  <div class="container">
+    <nav class="nav">
+      <a href="/" class="logo">PricePulse</a>
+      <div class="nav-links">
+        <a href="/">Главная</a>
+        <a href="/catalog" class="active">Каталог</a>
+        <a href="/analytics">Аналитика</a>
+        <a href="/deals">Сделки дня</a>
+        <a href="/compare">Сравнение</a>
+      </div>
+    </nav>
+
+    <section class="panel">
+      <h1>Каталог товаров</h1>
+      <div class="controls">
+        <input id="searchInput" placeholder="Поиск по названию..." />
+        <select id="categorySelect"></select>
+        <button id="loadBtn">Найти</button>
+        <button id="loadMoreBtn">Показать еще</button>
+      </div>
+      <div id="productsGrid" class="products-grid"></div>
+    </section>
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
