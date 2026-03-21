@@ -57,3 +57,8 @@ uvicorn app.main:app --reload
 3. Выбери свой GitHub-репозиторий: Render увидит `render.yaml` и создаст сервис автоматически.
 4. После деплоя получишь публичный URL вида `https://pricepulse-portfolio.onrender.com`.
 5. Этот URL добавляй в портфолио на биржах.
+
+## Railway (Railpack / mise)
+Версия Python зафиксирована на **3.12.8** (файлы `.python-version` и `mise.toml`), чтобы избежать ошибки установки **Python 3.13** на билдере (`missing a lib directory`).
+
+**Start command:** `uvicorn app.main:app --host 0.0.0.0 --port $PORT` (см. также `Procfile`).
